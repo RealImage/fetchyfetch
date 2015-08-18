@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/realimage/fetchyfetch#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "phantom": "^0.7.2"
   }
 }
