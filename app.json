@@ -2,5 +2,11 @@
   "name": "fetchyFetch",
   "description": "A API to fetch raw HTML from dynamically generated pages.",
   "repository": "https://github.com/Realimage/fetchyFetch",
-  "keywords": ["node", "express", "API"],
+  "keywords": ["node", "express", "API", "phantom"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git",
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+    }
+  ]
 }
