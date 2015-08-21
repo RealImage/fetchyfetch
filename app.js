@@ -6,7 +6,7 @@ app.set('port', (process.env.PORT || 5000));
 
 
 app.get('/fetch', function(request, response) {
-  url = request.query.url
+  url = encodeURI(request.query.url);
   phantom.create(function (ph) {
     ph.createPage(function (page) {
       page.open(url, function (status) {
